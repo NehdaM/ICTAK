@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding-left: 350px;
+    width: 100px;
+} 
+
+.batch{
+    align-items: center;
+    padding-left: 350px;
+    margin-top: 50px;
+    padding-right: 100px;
+    
+}
+
+select{
+    width: 250px;
+    height: 50px;
+}
+
+
+table{
+    align-content: center;
+}
+
+
+thead{
+    width: 20%;
+    column-gap: 20px;
+}

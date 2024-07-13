@@ -1,0 +1,52 @@
+<!-- <h1>Batches</h1>
+
+<div>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Batch name</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of students; let i=index">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{item.formName}}</td>
+                <td>{{item.formEmail}}</td>
+                <td>{{item.formBatch}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<h1>Batches </h1>
+<div class="batch">
+    <select id="batch" [(ngModel)]="selectedBatch" (change)="onBatchChange()">
+        <option *ngFor="let batch of batches" [value]="batch">{{ batch }}</option>
+    </select>
+</div>
+<table class="table table-dark table-striped">
+    <div *ngIf="students && students.length">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No.</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let student of students; let i=index">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{student.formName}}</td>
+                <td>{{student.formEmail}}</td>
+                <td>{{student.formPhoneno}}</td>
+            </tr>
+        </tbody>
+    </div>
+</table>
+    <div *ngIf="students && !students.length">
+        <p>No records..</p>
+</div>

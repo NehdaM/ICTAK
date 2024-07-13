@@ -1,0 +1,35 @@
+.container-fluid{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(135, 235, 252);
+
+    .container.sidebar{
+        margin: 0;
+        padding: 0;
+        background: rgb(34, 118, 178);
+        
+        width: 20%;
+        color: violet;
+        padding: 20px 5px ;
+        border-top: solid 3px rgb(10, 86, 162);
+    }
+    .container.main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+h1{
+    right: 100px;
+    text-align: center;
+    margin-right: 450px;
+    background-color: rgb(129, 217, 255);
+    width: 100%;
+    margin: 0
+    ;
+}
+

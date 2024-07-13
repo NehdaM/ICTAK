@@ -1,0 +1,218 @@
+/* body{
+    background: linear-gradient(to right, #20002c,#cbb4d4);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  h4{
+    text-align: center;
+  }
+  form {
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      width: 330px;
+      padding: 40px;
+      margin-left: 10px;
+      border: 2px solid #410c56;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px ;
+      border-radius: 10px;
+      color: black;
+    }
+    
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    }
+    
+    .login-container label {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .login-container input{
+   
+      width: 100%;
+      margin-bottom: 25px;
+      border: 3px solid #ccc;
+      border-radius: 5px;
+      padding: 8px;
+      font-size: medium;
+    }
+  
+    .login-container input[type="email"]:hover,
+    .login-container input[type="password"]:hover{
+      border-color:#89599c;
+    }
+   
+    .error-message {
+      color: #ff0000;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+  
+    .login-container button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(77, 14, 77);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .login-container button[type="submit"]:hover {
+  
+      color: white;
+      background: linear-gradient(450deg,transparent,rgb(77, 14, 77));
+      border: outset;
+      border-color: #552e64;
+    }
+    
+  
+    .login-container button[type="submit"]:disabled {
+      background-color:#cbb4d4;
+      color: grey;
+      cursor: not-allowed;
+    }
+    
+    .login-error {
+      text-align: center;
+      color: #ff0000;
+      margin-top: 10px;
+    }
+  
+    #password{
+      margin-bottom: 5px;
+    }
+  
+    select{
+      height: 30px;
+      width: 100%;
+      color: gray;
+    } 
+  
+
+
+   .login-section{
+    height: 100vh;
+   }
+
+   .login-card{
+    width: 450px;
+   } */
+
+body{
+  height: 597px;
+}
+
+
+
+   *{
+    background-color:#7ab4e7;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  h4{
+    text-align: center;
+  }
+  form {
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      width: 300px;
+      padding: 40px;
+      border: 2px solid #003847;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px ;
+      border-radius: 10px;
+    }
+    
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    }
+    
+    .login-container label {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      margin-bottom: 25px;
+      background-color: #a9e7f8;
+      border-radius: 5px;
+      padding: 8px;
+      font-size: medium;
+    }
+  
+    .login-container input[type="email"]:hover,
+    .login-container input[type="password"]:hover{
+      border-color:#89599c;
+    }
+   
+    .error-message {
+      color: #ff0000;
+      font-size: 14px;
+      margin-top: 1px;
+    }
+  
+    .common-error-message{
+      color: #ff0000;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+    
+  
+    .login-container button[type="submit"] {
+      width: 100%;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: rgb(77, 14, 77);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .login-container button[type="submit"]:hover {
+      /* background-color: rgb(118, 23, 118); */
+      color: white;
+      background: linear-gradient(450deg,transparent,rgb(77, 14, 77));
+      border: outset;
+      border-color: #552e64;
+    }
+    
+  
+    .login-container button[type="submit"]:disabled {
+      background-color:#cbb4d4;
+      color: black;
+      cursor: not-allowed;
+    }
+    
+    .login-error {
+      text-align: center;
+      color: #ff0000;
+      margin-top: 10px;
+    }
+  
+    #password{
+      margin-bottom: 5px;
+    }
+  
+    select{
+      height: 30px;
+      width: 100%;
+      color: gray;
+    } 
+  

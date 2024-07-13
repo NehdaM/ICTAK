@@ -1,0 +1,157 @@
+<div class="container-fluid">
+
+  <div class="product-section">
+
+
+    <form [formGroup]="stdForm">
+      <div class="row mb-3 ">
+        <label for="formName" class="col-sm-1 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="formName" formControlName="formName">
+
+          <div *ngIf="stdForm?.get('formName')?.invalid && (stdForm.get('formName')?.dirty || stdForm.get('formName')?.touched)">
+            <div *ngIf="stdForm.get('formName')?.errors">
+              <p class="text-danger">Name is required!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="formPhoneno" class="col-sm-1 col-form-label">Phone Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="formPhoneno" formControlName="formPhoneno" maxlength="10">
+          <div *ngIf="stdForm?.get('formPhoneno')?.invalid && (stdForm.get('formPhoneno')?.dirty || stdForm.get('formPhoneno')?.touched)">
+            <div *ngIf="stdForm.get('formPhoneno')?.errors">
+              <p class="text-danger">Phone no is required!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 ">
+        <label for="formEmail" class="col-sm-1 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="formEmail" formControlName="formEmail">
+          <div *ngIf="stdForm?.get('formEmail')?.invalid && (stdForm.get('formEmail')?.dirty || stdForm.get('formEmail')?.touched)">
+            <div *ngIf="stdForm.get('formEmail')?.errors">
+              <p class="text-danger">Email is required!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3 ">
+        <label for="formDob" class="col-sm-1 col-form-label">DOB</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="formDob" formControlName="formDob">
+          <div *ngIf="stdForm?.get('formDob')?.invalid && (stdForm.get('formDob')?.dirty || stdForm.get('formDob')?.touched)">
+            <div *ngIf="stdForm.get('formDob')?.errors">
+              <p class="text-danger">DOB is required!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 ">
+        <label for="formBatch" class="col-sm-1 col-form-label">Batch Name</label>
+        <select class="form-select" id="formBatch" aria-label="Default select example" formControlName="formBatch">
+          <option>Select your batch</option>
+          <option value="MLAI">KKEM March CSA</option>
+          <option value="FSD">KKEM March DSA</option>
+          <option value="DSA">KKEM march MLAI</option>
+          <option value="DSA">KKEM March FSD</option>
+          <option value="DSA">KKEM March ST</option>
+        </select>
+        <div *ngIf="stdForm?.get('formBatch')?.invalid && (stdForm.get('formBatch')?.dirty || stdForm.get('formBatch')?.touched)">
+          <div *ngIf="stdForm.get('formBatch')?.errors">
+            <p class="text-danger">Batch is required!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGender">Gender :</label>
+        <select id="formGender" name="formGender" formControlName="formGender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <div *ngIf="stdForm?.get('formGender')?.invalid && (stdForm.get('formGender')?.dirty || stdForm.get('formGender')?.touched)">
+          <div *ngIf="stdForm.get('formGender')?.errors">
+            <p class="text-danger">Gender is required!</p>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary fluid-end" (click)="submit()" [disabled]="!stdForm.valid">Submit</button>
+    </form>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <body>
+    <header>
+    <div  class="student-dashboard-container">
+        <h2>Student Dashboard</h2> -->
+
+<!-- <form #exitForm="ngForm" (ngSubmit)="submitTest(exitForm)"> -->
+<!-- <form>
+          <div class="form-group">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number :</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"  required>
+          </div>
+      
+          <div class="form-group">
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="batchName">Batch Name :</label>
+            <select id="batchName" name="batchName" required>
+              <option value="">Select Batch</option>
+              <option value="KKEM March CSA">KKEM March CSA</option>
+              <option value="KKEM March DSA">KKEM March DSA</option>
+              <option value="KKEM March MLAI">KKEM March MLAI</option>
+              <option value="KKEM March FSD">KKEM March FSD</option>
+              <option value="KKEM March ST">KKEM March ST</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="gender">Gender :</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+    
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+    </header>
+    </body> -->
+<!-- <div *ngIf="formError" class="error-message">{{ formError }}</div>
+    
+        <div *ngIf="formSubmitted" class="success-message">Form submitted successfully!</div> -->
